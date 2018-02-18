@@ -25,37 +25,43 @@
     
   </head>
 
-  <body>
+  <body id="pagina-arriba" data-spy="scroll" data-target=".navbar-personalizada">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-personalizada navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header pagina-scroll">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">VeronaPrueba</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+    <!--MENU-->
+        <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse"> <!--se van a usar desde less-->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="hidden">
+              <a href="#pagina-arriba"></a> <!--se va a posicionar en la parte principal-->
+            </li>
+            <li class="pagina-scroll">
+              <a href="#empresa">empresa</a>
+            </li>
+            <li class="pagina-scroll">
+              <a href="#servicios">servicios</a>
+            </li>
+            <li class="pagina-scroll">
+              <a href="#clientes">clientes</a>
+            </li>
+            <li class="pagina-scroll">
+              <a href="#contacto">contacto</a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core y JavaScript-->
