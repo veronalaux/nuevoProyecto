@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formulario</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+	
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>formulario</legend>
+
+<!-- Select Basic -->
+
+<!-- Nombre-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Nombre</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Nombre(s)" class="form-control input-md">
+    
+  </div>
+</div>
+<!-- Apellidos-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Apellidos</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Apellidos" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Continente</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">América</option>
+      <option value="2">Asia</option>
+      <option value="3">Europa</option>
+      <option value="4">Africa</option>
+      <option value="5">Oceanía</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Sexo</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">Femenino</option>
+      <option value="2">Masculino</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="E-mail">E-mail</label>  
+  <div class="col-md-4">
+  <input id="E-mail" name="E-mail" placeholder="seu@email.com.br" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Contraseña</label>  
+  <div class="col-md-4">
+  <input id="password" name="password" type="password" placeholder=""  class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="equipamentos">Equipamentos</label>
+  <div class="col-md-4">
+    <select id="equipamentos" name="equipamentos" class="form-control" multiple="multiple">
+      <option value="1">Revólver</option>
+      <option value="2">Lanterna</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="exames">Exames</label>
+  <div class="col-md-4">
+    <select id="equipamentos" name="equipamentos" class="form-control" multiple="multiple">
+      <option value="1">Sangue Completo</option>
+      <option value="2">Eletrocardiograma</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="treinamentos">Treinamentos</label>
+  <div class="col-md-4">
+    <select id="equipamentos" name="equipamentos" class="form-control" multiple="multiple">
+      <option value="1">Trabalho em Altura</option>
+      <option value="2">Direção Defensiva</option>
+    </select>
+  </div>
+</div>
+
+
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="treinamentos">Ítens Complementares</label>
+  <div class="col-md-4">
+    <select id="complementares" name="complementares" class="form-control" multiple="multiple">
+      <option value="1">Ônibus por posto por mês</option>
+      <option value="2">Alimentação Vargem Grande por pessoa por dia</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Ticket Alimentação</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1">
+      Sim
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Não
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Vale Transporte</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1">
+      Sim
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Não
+    </label>
+  </div>
+</div>
+
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Horas In Itinere</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="" type="text">
+      <span class="input-group-addon">por dia</span>
+    </div>
+    
+  </div>
+</div>
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Horas Intrajornada</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="" type="text">
+      <span class="input-group-addon">por dia</span>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Horas Sobreaviso</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="" type="text">
+      <span class="input-group-addon">por dia</span>
+    </div>
+  </div>
+</div>
+
+<!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Hora Primeira Troca Turno (24h) ou Hora Início Jornada (12h)</label>
+  <div class="col-md-4">
+    <div class="input-group">
+        <input id="textinput" name="textinput" type="text" placeholder="HH:MM" class="form-control input-md">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Atividade</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="Eventual">Eventual</option>
+      <option value="Permanente">Permanente</option>
+      <option value="Projeto">Projeto</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-info">Inserir</button>
+<!--    <button id="Desmobilizar" name="Desmobilizar" class="btn btn-danger">Desmobilizar</button> -->
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Centro de Custo / Plano da Estrutura do Projeto (PEP)</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="TABELA com Tipo, CC e rateio" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Conta Contábil</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">CNPJ Contratada</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Fiscal Responsável</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">A menos que seja o fiscal que peça a mobilização para gerente aprovar</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+
+
+</form>
+
+	
+</body>
+</html>

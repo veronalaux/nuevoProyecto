@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- controla el nivel de zoom cuando la página se carga por primera vez.-->
 
-    <title>proyectofinal | con Tutorial</title>
+    <title>FanPage || Lady Gaga</title>
 
     <!--Importando el link de css a nuestro archivo -->
     <link href="css/main.css" rel="stylesheet"> <!--generado desde less-->
@@ -21,12 +21,9 @@
 
     <!--para que el ICONO se ponga-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    
   </head>
-
   <body id="pagina-arriba" data-spy="scroll" data-target=".navbar-personalizada">
-
+<!--barra de navegacion-->
     <nav class="navbar navbar-personalizada navbar-fixed-top">
       <div class="container">
         <div class="navbar-header pagina-scroll">
@@ -38,7 +35,8 @@
           </button>
           <a class="navbar-brand" href="#" style="font-size: 20px" >FanPage Lady Gaga</a>
         </div>
-    <!--MENU-->
+
+  <!--MENU-->
         <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collpase"> <!--se van a usar desde less-->
           <ul class="nav navbar-nav">
             <li class="hidden">
@@ -51,7 +49,7 @@
               <a href="#biografia">Biografia</a> <!--por historia//las # son anclas-->
             </li>
             <li class="pagina-scroll">
-              <a href="#noticias">Noticias y Multimedia</a>
+              <a href="#noticias">Noticias y Multimedia</a> <!--las imagenes tienen hipervinculos-->
             </li>
             <li class="pagina-scroll">
               <a href="#contacto">Contacto</a>
@@ -74,39 +72,46 @@
               <p class="intro-texto"><strong><span class="color-black">Pagina de los little Monster</span></strong> | Un espacio dedicado para la Mother Monster</p>
             </div>
 
-            <!--para el carrusel, lo saque de la pagina https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+  <!--CARRUSEL, lo saque de la pagina https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+              <div class="container">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
+                  <!-- Indicaciones -->
                   <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
                   </ol>
 
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img src="img/LGSB.jpg" alt="Los Angeles" class="img-responsive">
+                      <img src="img/LGSB.jpg"  class="img-responsive">
                     </div>
 
                     <div class="item">
-                      <img src="img/LG.jpg" alt="Chicago" class="img-responsive">
+                      <img src="img/LG.jpg" >
                     </div>
 
                     <div class="item">
-                      <img src="img/superbowl51.jpg" alt="New York">
+                      <img src="img/superbowl51.jpg" >
+                    </div>
+                    <div class="item">
+                      <img src="img/emmys.jpg">
                     </div>
                   </div>
+              </div>
 
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  <!-- CONTROLES -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
+                <!--en el video no se menciona que se tiene que editar el js, yo lo modifique-->
                 </div> <!--FIN CARRUSEL-->
           </div>
         </div>
@@ -213,55 +218,47 @@
     </div> <!--fin de ROW 2-->
 </section>
 
-
 <!--seccion BIOGRAFIA-->
 <section id="biografia" class="contenido-seccion text-justify">
       <div class="seccion-servicios">
         <div class="container">
           <h2 style="color: white;" align="center"> <strong> Biografia </strong></h2>
           <h3 align="center"><strong>Stefani Joanne Angelina Germanota </strong></h3>
-       
-    <article class="post">
-                    <a class="pull-left thumb" href="img/ldjoven.jpg" class="href">
-                        <img class="img-thumbail" src="img/ldjoven.jpg" >
-                    </a>
-                    <h2 class="titular">
-                    <a href="img/ldjoven.jpg" style="color: white; font-size: 25px;"> <strong>Inicios</strong></a></h2>
-                    <p class="contenido text-justify"> Nació en una familia de clase trabajadora. Comenzó a tocar el piano a los cuatro años, compuso su primera balada a los trece y participó en eventos públicos a los catorce. A pesar de las restricciones económicas, Lady Gaga estudió en colegio privado católico. Por ese entonces la joven era disciplinada, estudiosa pero insegura lo que no le permitía integrarse al grupo de compañeros sin que esto le impida destacarse en los musicales escolares. Finalmente estudió música en la Escuela de Arte de Tisch para abandonarla más tarde y comenzar su carrera musical.</p>
-                
-                    
-                </article>
+       <!--Articulos-->
+            <article class="post">
+                <a class="pull-left thumb" href="img/ldjoven.jpg" class="href">
+                    <img class="img-thumbail" src="img/ldjoven.jpg" >
+                </a>
+                <h2 class="titular">
+                <a href="img/ldjoven.jpg" style="color: white; font-size: 25px;"> <strong>Inicios</strong></a></h2>
+                <p class="contenido text-justify"> Nació en una familia de clase trabajadora. Comenzó a tocar el piano a los cuatro años, compuso su primera balada a los trece y participó en eventos públicos a los catorce. A pesar de las restricciones económicas, Lady Gaga estudió en colegio privado católico. Por ese entonces la joven era disciplinada, estudiosa pero insegura lo que no le permitía integrarse al grupo de compañeros sin que esto le impida destacarse en los musicales escolares. Finalmente estudió música en la Escuela de Arte de Tisch para abandonarla más tarde y comenzar su carrera musical.</p>                
+            </article>
                 <br>
-                
-                
 
-                <article>  
-                 <a class="pull-right thumb" href="img/justdance.jpg" class="href">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                        <img class="img-thumbail" src="img/justdance.jpg" height="200">
-                    </a> 
-                    <h2 class="titular2">
-                    <a href="img/justdance.jpg" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
-                    <p class="contenido text-justify"> Comenzó en el año 2005 cuando conoce al productor Red One con quien realiza sus primeras canciones. Actuó en diversos clubes neoyorquinos con un estilo vanguardista y burlesque. Conoció también al productor Rob Fusari quien a base de la canción ‘Radio Ga Ga’ del grupo Queen apodó a la artista con su nombre actual.
-                    Durante el año 2007 y en diversas actuaciones, Lady Gaga colaboró con Lady Starlight debutando juntas en el festival musical ‘Lollapalooza’ recibiendo críticas positivas mientras paralelamente conocía al producto Vincent Herbert, este le consiguió ingresar a Interscope Records para escribir canciones, allí el cantautor Akon descubrió en Lady Gaga un gran potencial y consiguió tenerla como cantante para su sello. Así Lady Gaga pasaría a ser la cantante que debutó con su album The Fame consiguiendo los primeros puestos en países como EE.UU y Reino Unido.</p>
-                   
-                 </article>
+            <article class="post">  
+               <a class="pull-right thumb" href="img/justdance.jpg" class="href">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                      <img class="img-thumbail" src="img/justdance.jpg" height="200">
+                  </a> 
+                  <h2 class="titular2">
+                  <a href="img/justdance.jpg" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
+                  <p class="contenido text-justify"> Comenzó en el año 2005 cuando conoce al productor Red One con quien realiza sus primeras canciones. Actuó en diversos clubes neoyorquinos con un estilo vanguardista y burlesque. Conoció también al productor Rob Fusari quien a base de la canción ‘Radio Ga Ga’ del grupo Queen apodó a la artista con su nombre actual.
+                  Durante el año 2007 y en diversas actuaciones, Lady Gaga colaboró con Lady Starlight debutando juntas en el festival musical ‘Lollapalooza’ recibiendo críticas positivas mientras paralelamente conocía al producto Vincent Herbert, este le consiguió ingresar a Interscope Records para escribir canciones, allí el cantautor Akon descubrió en Lady Gaga un gran potencial y consiguió tenerla como cantante para su sello. Así Lady Gaga pasaría a ser la cantante que debutó con su album The Fame consiguiendo los primeros puestos en países como EE.UU y Reino Unido.</p>       
+            </article>
                 <br>
                 <br>
                 <br>
 
-          
- <article>  
-                 <a class="pull-left thumb" href="img/alt.gif" class="href">
-                        <img class="img-thumbail" src="img/alt.gif" >
-                    </a> 
-                    <h2 class="titular3">
-                    <a href="img/alt.gif" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
-          <p class="contenido text-justify">Otras apreciaciones : Lady Gaga es además de cantante y productora, contribuidora de gran cantidad de organizaciones benéficas.</p>
-
+           <article class="post">  
+              <a class="pull-left thumb" href="img/alt.gif" class="href">
+              <img class="img-thumbail" src="img/alt.gif" >
+              </a> 
+              <h2 class="titular3">
+              <a href="img/alt.gif" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
+              <p class="contenido text-justify">Otras apreciaciones : Lady Gaga es además de cantante y productora, contribuidora de gran cantidad de organizaciones benéficas.</p>
            </article>
                 <br>
                 <br>
@@ -274,15 +271,18 @@
 <!--seccion NOTICIAS-->
 <section id="noticias" class="contenido-seccion text-center">
     <div class="container">
-<div class="row">
-    <div class="col md 6">
+<!--ROW 1-->
+  <div class="row">
+    <div class="col md 6"> <!--si le pongo los - - - no me respeta el grid :/ -->
     
         <h2>Noticias y multimedia</h2>
-        <p>Da click en la imagen para más informacion</p>
-<div class="col-md-4">
+        <p style="color: #938C8C">Da click en la imagen para más información.</p>
+      <!--primera noticia-->
+        <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
             <div class="icono">
+        <!--las imagenes los redirige a la noticia de donde tome para la pagina-->
                <a href="http://www.vogue.es/celebrities/articulos/lady-gaga-vestido-grammy-2018/32852"><img src="img/noticiaGaga3.jpg" style="width: 100px; height: 100px;" align="left"> </a>
             </div>
              <div class="contenido-icono">
@@ -293,7 +293,7 @@
           </div>
         </div>
 
-
+      <!--segunda noticia-->
         <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
@@ -308,7 +308,7 @@
           </div>
         </div>
 
-
+      <!--tercera noticia-->
         <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
@@ -322,22 +322,21 @@
              </div>
           </div>
         </div>
-          
-</div>
-</div>
+  </div> <!--fin del primer col-md-6-->
+</div> <!--fin ROW 1-->
 
-<div class="row">
-<div class="col md 6">
-    <h2>Video</h2>
-    <p>Disfruta una de sus mejores presentaciones, la del Super Bowl #51 </p>
+<!--ROW 2-->
+  <div class="row">
+    <div class="col md 6">
+    <!--seccion VIDEO autoplay-->
+      <h2>Video</h2>
+      <p>Disfruta una de sus mejores presentaciones, la del Super Bowl #51 </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/txXwg712zw4?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/txXwg712zw4?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <!--para el autoplay es ?rel=0&autoplay=1   al final de hipervinculo-->
+    </div> <!--fin col-md-6-->
+  </div> <!--fin ROW 2-->
+</div> <!--fin CONTAINER-->
 </section>
-
 
 <!--seccion CONTACTO-->
 
@@ -345,70 +344,74 @@
     <div class="row">
         <div class="col-md-6">
         <h2>Contacto con la responsable de la página</h2>
-        <p>Me interesa saber lo que usted piensa, escribeme a travers del formulario de contacto</p>
-        <p>lau.marzet@gmail.com</p>
-         <ul class="list-inline">
-            <li><a href="http://facebook.com/lalis.mar.3" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i><span class="network-name">  Twitter</span></a></li>
-             <li><a href="http://facebook.com/veronalaux" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i><span class="network-name">  Facebook</span></a></li>
+    <!--YO (imagen y contacto)-->
+        <a class="pull-left thumb" href="img/yo.jpg" class="href">
+              <img class="img-thumbail" src="img/yo.jpg" width="150px;" height="150px;" >
+              </a> 
+              <h3 style="color: gold; font-size: 18px;"><strong>¡Hola! Soy VerOna</strong></h3>
+              <p class="contenido text-center">Little Monster  ||  Potterhead  ||  Cinéfila  ||  Pambolera   ||   Ingeniera en Proceso  </p>
+       
+        
+        
+        <p>O escribeme a través de mis redes sociales</p>
+        <p align="center">lau.marzet@gmail.com</p>
+         <ul class="list-inline" >
+            <li><a href="https://twitter.com/veronalaux" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i><span class="network-name">  Twitter</span></a></li>
+             <li><a href="http://facebook.com/lalis.mar.3" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i><span class="network-name">  Facebook</span></a></li>
              <li><a href="https://www.linkedin.com/in/laurazetina/" class="btn btn-primary btn-lg"><i class="fab fa-linkedin-in"></i><span class="network-name">  Linkedin</span></a></li>
              <li><a href="https://github.com/veronalaux" class="btn btn-primary btn-lg"><i class="fab fa-github"></i><span class="network-name">  Github</span></a></li>
          </ul> 
-        </div>
+       </div>
+        
 
-        <!--FORMULARIO-->
+  <!--FORMULARIO
+    fue una mezcla de tres formularios que vi de la pagina bootsnip-->
         <div class="col-md-6">
             <form class="form-horizontal">
                 <fieldset>
-
-                <!-- Form Name -->
-                <legend>formulario</legend>
-
-                <!-- Select Basic -->
-
-                <!-- Nombre-->
+                
+            <!-- Nombre-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="textinput">Nombre</label>  
                   <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="Nombre(s)" class="form-control input-md">
+                  <input id="textinput" name="textinput" type="text" placeholder="Nombre(s)" class="form-control input-md" required="">
                     
                   </div>
                 </div>
-                <!-- Apellidos-->
+            <!-- Apellidos-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="textinput">Apellidos</label>  
                   <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="Apellidos" class="form-control input-md">
+                  <input id="textinput" name="textinput" type="text" placeholder="Apellidos" class="form-control input-md" required="">
                     
                   </div>
                 </div>
 
-                <!-- Seleccion de Contiente -->
+            <!--País -->
                 <div class="form-group">
-                  <label class="col-md-4 control-label" for="selectbasic">Continente</label>
+                  <label class="col-md-4 control-label" for="selectbasic">País</label>
                   <div class="col-md-4">
                     <select id="selectbasic" name="selectbasic" class="form-control">
-                      <option value="1">América</option>
-                      <option value="2">Asia</option>
-                      <option value="3">Europa</option>
-                      <option value="4">Africa</option>
-                      <option value="5">Oceanía</option>
+                      <option value="1">México</option>
+                      <option value="2">España</option>
+                      <option value="3">Argentina</option>
+                      <option value="4">EUA</option>
+                      <option value="5">Chile</option>
                     </select>
                   </div>
                 </div>
-
+            <!--Email-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="E-mail">E-mail</label>  
                   <div class="col-md-4">
                   <input id="E-mail" name="E-mail" placeholder="seu@email.com.br" class="form-control input-md" required="" type="text">
-                    
                   </div>
                 </div>
-
+            <!--Password-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="password">Contraseña</label>  
                   <div class="col-md-4">
                   <input id="password" name="password" type="password" placeholder=""  class="form-control input-md">
-                    
                   </div>
                 </div>
             <!--A quien prefieres-->
@@ -425,7 +428,7 @@
                     </label>
                   </div>
                 </div>
-                <!-- Select Multiple -->
+            <!-- Disco favoritos -->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="municipio">Disco Favorito</label>
                   <div class="col-md-4">
@@ -440,7 +443,7 @@
                   </div>
                 </div>
 
-                <!-- Multiple Radios (inline) -->
+                <!-- Género -->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="radios">Sexo</label>
                   <div class="col-md-4"> 
@@ -455,8 +458,7 @@
                   </div>
                 </div>
 
-
-                <!-- Textarea -->
+                <!-- Comentario-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="textarea">Comentarios</label>
                   <div class="col-md-4">                     
@@ -464,20 +466,17 @@
                   </div>
                 </div>
 
-                <!-- Button (Double) -->
+                <!-- Button-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="button1id"></label>
                   <div class="col-md-8">
                     <button id="button1id" name="button1id" class="btn btn-primary">Enviar</button>
                   </div>
                 </div>
-
-                </form>
-
-        </div> 
-            
-        </div>
-      </div>
+        </form>
+    </div>          
+  </div>
+ </div>
 </section>
 
     <!-- Bootstrap core y JavaScript-->
@@ -491,3 +490,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </body>
 </html>
+
+<!--
+         TUTORIAL de dónde me base
+https://www.youtube.com/watch?v=Zkd1AP48wH4&t=127s
+
+explia muy bien paso por paso, algunas cosas las investigue 
+por mi cuenta  ya que no funcionaba una que otra parte del código
+-->
