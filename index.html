@@ -51,7 +51,7 @@
               <a href="#biografia">Biografia</a> <!--por historia//las # son anclas-->
             </li>
             <li class="pagina-scroll">
-              <a href="#noticias">Noticias</a>
+              <a href="#noticias">Noticias y Multimedia</a>
             </li>
             <li class="pagina-scroll">
               <a href="#contacto">Contacto</a>
@@ -67,12 +67,47 @@
     <section class="intro">
       <div class="intro-cuerpo">
         <div class="container">
-          <riv class="row">
+          <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <!--offsett hace que se recorra dos columnas hacia la izq.-->
               <h1 class="texto-bienvenidos">Bienvenidos</h1>
-              <p class="intro-texto"><strong><span class="color-gold">Pagina de los little Monster</span></strong> | Un espacio dedicado para la Mother Monster</p>
+              <p class="intro-texto"><strong><span class="color-black">Pagina de los little Monster</span></strong> | Un espacio dedicado para la Mother Monster</p>
             </div>
+
+            <!--para el carrusel, lo saque de la pagina https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="img/LGSB.jpg" alt="Los Angeles" class="img-responsive">
+                    </div>
+
+                    <div class="item">
+                      <img src="img/LG.jpg" alt="Chicago" class="img-responsive">
+                    </div>
+
+                    <div class="item">
+                      <img src="img/superbowl51.jpg" alt="New York">
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div> <!--FIN CARRUSEL-->
           </div>
         </div>
       </div>
@@ -83,7 +118,7 @@
 <!--SECCION Discografia-->
 <section id="discografia" class="container contenido-seccion">
     <h2 class="text-center">Sus Discos mas representativos son</h2>
-    <p class="text-center">Discografía de <strong style="font-size: 30px;"> Lady Gaga</strong> || El contenido de este sitio es opinión personal</p>
+    <p class="text-center">Discografía de <strong style="font-size: 30px;"> Lady Gaga</strong> || Puedes darle click al album para que lo escuches</p>
     <br>
 <!--Inicio de ROW 1-->
     <div class="row">
@@ -91,10 +126,10 @@
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
             <div class="icono">
-               <i class="fa fa-thumbs-up fa-5x"></i>
+               <a href="https://open.spotify.com/album/2KkMVsxymoNR7hRmBcMttd?si=HtcMf7azQfSOvfvWGMhGkA"><img src="img/discoBTW.jpg" style="width: 100px; height: 100px;" align="left"> </a>
             </div>
              <div class="contenido-icono">
-               <h3>Born This Way</h3>
+               <h3 align="center"><strong>Born This Way</strong></h3>
                <p align="justify">Born This Way —en español: Nací de esta manera— es el segundo álbum de estudio de la cantante estadounidense Lady Gaga, lanzado mundialmente el 23 de mayo de 2011 por el sello Interscope Records.​​
                </p>
              </div>
@@ -106,10 +141,10 @@
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
             <div class="icono">
-               <i class="fa fa-thumbs-up fa-5x"></i>
+               <a href="https://open.spotify.com/album/5drTYB3sPmtgLTnj04FUad?si=a9dl2ad4TfSYsBQy2LPwtA"><img src="img/thefame.jpg" style="width: 100px; height: 100px;" align="left"></a>
             </div>
              <div class="contenido-icono">
-               <h3>The Fame</h3>
+               <h3 align="center"><strong>The Fame</strong></h3>
                <p align="justify">The Fame —en español: La fama— es el álbum debut de la cantante estadounidense Lady Gaga, lanzado mundialmente el 19 de agosto de 2008 por el sello Interscope Records.
                </p>
              </div>
@@ -120,11 +155,11 @@
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
             <div class="icono">
-               <i class="fa fa-thumbs-up fa-5x"></i>
+               <a href="https://open.spotify.com/album/7H4ZbSDmdzFNTrkNKDUXMC?si=ohk1UlFwQ6G4qPLoa6IqhA"><img src="img/TFMonster.jpg" style="width: 100px; height: 100px;" align="left"></a>
             </div>
              <div class="contenido-icono">
-               <h3>Profesional</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <h3 align="center"><strong>The Fame Monster</strong></h3>
+               <p align="justify">The Fame Monster​ —en español: 'El monstruo de la fama'— es el tercer extended play (EP) y segundo gran lanzamiento​ de la cantante estadounidense Lady Gaga, lanzado al mercado musical el 18 de noviembre de 2009 y en fechas cercanas alrededor del mundo.
                </p>
              </div>
           </div>
@@ -137,11 +172,11 @@
           <div class="bloque icono-bloque-izquierdo">
         <!--iconos-->
              <div class="icono">
-               <i class="fa fa-book fa-5x"></i>
+               <a href="https://open.spotify.com/album/705K6lFN9wm3bifelyuQS4?si=dt9iA3w_TKu-mTBMyUgK6g"><img src="img/artpop.jpg" style="width: 100px; height: 100px;" align="left"></a>
              </div>
              <div class="contenido-icono">
-               <h3>Información</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <h3 align="center"><strong>ArtPop</strong></h3>
+               <p align="justify">es el tercer álbum de estudio de la cantante y compositora estadounidense Lady Gaga, lanzado el 6 de noviembre de 2013 en Japón y mundialmente el 11 del mismo mes bajo el sello discográfico Interscope Records.
                </p>
              </div>
           </div>
@@ -151,11 +186,11 @@
         <div class="col-md-4">
           <div class="bloque icono-bloque-izquierdo">
              <div class="icono">
-               <i class="fa fa-users fa-5x"></i>
+               <a href="https://open.spotify.com/album/2VX9rp6NAC19TQN4IgkmYu?si=dKMxSu9sRfqV14TPW0CPWA"><img src="img/checktocheck.jpg" style="width: 100px; height: 100px;" align="left"></a>
              </div>
              <div class="contenido-icono">
-               <h3>Gran Comunidad</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <h3 align="center"><strong>Check to check</strong></h3>
+               <p align="justify">Es el primer álbum de estudio de dúo de los cantantes y compositores estadounidenses Tony Bennett y Lady Gaga, quincuagésimo séptimo álbum para Bennett y cuarto álbum para Gaga. Fue lanzado el 23 de septiembre en la mayoría de los países por las compañías disqueras Interscope y Columbia Records.
                </p>
              </div>
           </div>
@@ -165,11 +200,12 @@
           <div class="bloque icono-bloque-izquierdo">
         <!--ICONOS-->
              <div class="icono">
-               <i class="fa fa-heart fa-5x"></i>
+                <a href="https://open.spotify.com/album/2ZUwFxlWo0gwTsvZ6L4Meh?si=HOL0_HdDR8iIuJoplnQT4A" class="href"><img src="img/joanneDisco.jpg" style="width: 100px; height: 100px;" align="left"></a>
+               <!--<i class="fa fa-heart fa-5x"></i>-->
              </div>
              <div class="contenido-icono">
-               <h3>Satisfacción Garantizada</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <h3 align="center"><strong>Joanne</strong></h3>
+               <p align="justify">es el quinto álbum de estudio de la cantante y compositora estadounidense Lady Gaga, lanzado mundialmente el 21 de octubre de 2016 bajo el sello discográfico de Interscope Records.3​ De acuerdo con la artista, el título es un homenaje a su tía, quien falleció de lupus en diciembre de 1974, y cuya muerte afectó considerablemente a su familia
                </p>
              </div>
           </div>
@@ -179,25 +215,127 @@
 
 
 <!--seccion BIOGRAFIA-->
-<section id="biografia" class="contenido-seccion text-center">
+<section id="biografia" class="contenido-seccion text-justify">
       <div class="seccion-servicios">
         <div class="container">
-          <h2>Biografia</h2>
-          <p class="lead"><strong>SPA Natural</strong>Servicios especializados en todo lo relacionado con salud y belleza</p>
-          <a href="#biografia" class="btn btn-default btn-lg">Contáctenos</a>
+          <h2 style="color: white;" align="center"> <strong> Biografia </strong></h2>
+          <h3 align="center"><strong>Stefani Joanne Angelina Germanota </strong></h3>
+       
+    <article class="post">
+                    <a class="pull-left thumb" href="img/ldjoven.jpg" class="href">
+                        <img class="img-thumbail" src="img/ldjoven.jpg" >
+                    </a>
+                    <h2 class="titular">
+                    <a href="img/ldjoven.jpg" style="color: white; font-size: 25px;"> <strong>Inicios</strong></a></h2>
+                    <p class="contenido text-justify"> Nació en una familia de clase trabajadora. Comenzó a tocar el piano a los cuatro años, compuso su primera balada a los trece y participó en eventos públicos a los catorce. A pesar de las restricciones económicas, Lady Gaga estudió en colegio privado católico. Por ese entonces la joven era disciplinada, estudiosa pero insegura lo que no le permitía integrarse al grupo de compañeros sin que esto le impida destacarse en los musicales escolares. Finalmente estudió música en la Escuela de Arte de Tisch para abandonarla más tarde y comenzar su carrera musical.</p>
+                
+                    
+                </article>
+                <br>
+                
+                
+
+                <article>  
+                 <a class="pull-right thumb" href="img/justdance.jpg" class="href">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                        <img class="img-thumbail" src="img/justdance.jpg" height="200">
+                    </a> 
+                    <h2 class="titular2">
+                    <a href="img/justdance.jpg" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
+                    <p class="contenido text-justify"> Comenzó en el año 2005 cuando conoce al productor Red One con quien realiza sus primeras canciones. Actuó en diversos clubes neoyorquinos con un estilo vanguardista y burlesque. Conoció también al productor Rob Fusari quien a base de la canción ‘Radio Ga Ga’ del grupo Queen apodó a la artista con su nombre actual.
+                    Durante el año 2007 y en diversas actuaciones, Lady Gaga colaboró con Lady Starlight debutando juntas en el festival musical ‘Lollapalooza’ recibiendo críticas positivas mientras paralelamente conocía al producto Vincent Herbert, este le consiguió ingresar a Interscope Records para escribir canciones, allí el cantautor Akon descubrió en Lady Gaga un gran potencial y consiguió tenerla como cantante para su sello. Así Lady Gaga pasaría a ser la cantante que debutó con su album The Fame consiguiendo los primeros puestos en países como EE.UU y Reino Unido.</p>
+                   
+                 </article>
+                <br>
+                <br>
+                <br>
+
+          
+ <article>  
+                 <a class="pull-left thumb" href="img/alt.gif" class="href">
+                        <img class="img-thumbail" src="img/alt.gif" >
+                    </a> 
+                    <h2 class="titular3">
+                    <a href="img/alt.gif" style="color: white; font-size: 25px;"> <strong>Carrera</strong></a></h2>
+          <p class="contenido text-justify">Otras apreciaciones : Lady Gaga es además de cantante y productora, contribuidora de gran cantidad de organizaciones benéficas.</p>
+
+           </article>
+                <br>
+                <br>
+                <br>
+          <a href="#biografia"></a>
         </div>
       </div>
     </section>
 
-
-<section id="clientes" class="contenido-seccion text-center">
+<!--seccion NOTICIAS-->
+<section id="noticias" class="contenido-seccion text-center">
     <div class="container">
-        <h2>Discos</h2>
-        <img src="img/discoThefame.jpg" width="110">
-        <img src="img/discoThefame.jpg" width="110">
-        <img src="img/discoThefame.jpg" width="110">
-        
-    </div>
+<div class="row">
+    <div class="col md 6">
+    
+        <h2>Noticias y multimedia</h2>
+        <p>Da click en la imagen para más informacion</p>
+<div class="col-md-4">
+            <div class="bloque icono-bloque-izquierdo"> 
+        <!--iconos-->
+            <div class="icono">
+               <a href="http://www.vogue.es/celebrities/articulos/lady-gaga-vestido-grammy-2018/32852"><img src="img/noticiaGaga3.jpg" style="width: 100px; height: 100px;" align="left"> </a>
+            </div>
+             <div class="contenido-icono">
+               <h3 align="center"><strong>A Lady Gaga no le importa que hagan memes con su vestido</strong></h3>
+               <p align="justify">La cantante vuelve a darlo todo en la alfombra roja de los Grammy: ella entiende la moda como exceso y diversión
+               </p>
+             </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="bloque icono-bloque-izquierdo"> 
+        <!--iconos-->
+            <div class="icono">
+               <a href="https://planeta.pe/programas/oh-my-gachi/lady-gaga-increible-recaudacion-gira-80903#1"><img src="img/noticiaGaga2.jpg" style="width: 100px; height: 100px;" align="left"> </a>
+            </div>
+             <div class="contenido-icono">
+               <h3 align="center"><strong>La increíble recaudación de Lady Gaga gracias a su gira Internacional</strong></h3>
+               <p align="justify">La intérprete de ‘Bad Romance’ ha recaudado la suma de 94.9 millones de dólares en 49 conciertos. De esta manera, la gira mundial de Lady Gaga se convirtió en una de las giras más exitosas de los últimos años.
+               </p>
+             </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="bloque icono-bloque-izquierdo"> 
+        <!--iconos-->
+            <div class="icono">
+               <a href="https://elpais.com/cultura/2018/02/03/actualidad/1517675013_279520.html"><img src="img/noticiaGaga1.jpg" style="width: 100px; height: 100px;" align="left"> </a>
+            </div>
+             <div class="contenido-icono">
+               <h3 align="center"><strong>Lady Gaga suspende su gira por fuertes dolores</strong></h3>
+               <p align="justify">La cantante estadounidense Lady Gaga ha anunciado la cancelación de los últimos diez conciertos de su gira por varios países de Europa que inició el pasado 14 de enero en Barcelona, debido a una "grave dolencia"
+               </p>
+             </div>
+          </div>
+        </div>
+          
+</div>
+</div>
+
+<div class="row">
+<div class="col md 6">
+    <h2>Video</h2>
+    <p>Disfruta una de sus mejores presentaciones, la del Super Bowl #51 </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/txXwg712zw4?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+
 </section>
 
 
@@ -205,24 +343,142 @@
 
 <section id="contacto" class="contenido-seccion text-center">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6">
         <h2>Contacto con la responsable de la página</h2>
         <p>Me interesa saber lo que usted piensa, escribeme a travers del formulario de contacto</p>
-        <p>pruebita@gmail.com</p>
+        <p>lau.marzet@gmail.com</p>
          <ul class="list-inline">
-            <li><a href="http://facebook.com/" class="btn btn-primary btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Twitter</span></a></li>
-            
-            <li><a href="http://facebook.com/" class="btn btn-primary btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Facebook</span></a></li>
-            
-            <li><a href="https://www.linkedin.com/" class="btn btn-primary btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a></li>
-            
+            <li><a href="http://facebook.com/lalis.mar.3" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i><span class="network-name">  Twitter</span></a></li>
+             <li><a href="http://facebook.com/veronalaux" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i><span class="network-name">  Facebook</span></a></li>
+             <li><a href="https://www.linkedin.com/in/laurazetina/" class="btn btn-primary btn-lg"><i class="fab fa-linkedin-in"></i><span class="network-name">  Linkedin</span></a></li>
+             <li><a href="https://github.com/veronalaux" class="btn btn-primary btn-lg"><i class="fab fa-github"></i><span class="network-name">  Github</span></a></li>
          </ul> 
+        </div>
+
+        <!--FORMULARIO-->
+        <div class="col-md-6">
+            <form class="form-horizontal">
+                <fieldset>
+
+                <!-- Form Name -->
+                <legend>formulario</legend>
+
+                <!-- Select Basic -->
+
+                <!-- Nombre-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="textinput">Nombre</label>  
+                  <div class="col-md-4">
+                  <input id="textinput" name="textinput" type="text" placeholder="Nombre(s)" class="form-control input-md">
+                    
+                  </div>
+                </div>
+                <!-- Apellidos-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="textinput">Apellidos</label>  
+                  <div class="col-md-4">
+                  <input id="textinput" name="textinput" type="text" placeholder="Apellidos" class="form-control input-md">
+                    
+                  </div>
+                </div>
+
+                <!-- Seleccion de Contiente -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="selectbasic">Continente</label>
+                  <div class="col-md-4">
+                    <select id="selectbasic" name="selectbasic" class="form-control">
+                      <option value="1">América</option>
+                      <option value="2">Asia</option>
+                      <option value="3">Europa</option>
+                      <option value="4">Africa</option>
+                      <option value="5">Oceanía</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="E-mail">E-mail</label>  
+                  <div class="col-md-4">
+                  <input id="E-mail" name="E-mail" placeholder="seu@email.com.br" class="form-control input-md" required="" type="text">
+                    
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="password">Contraseña</label>  
+                  <div class="col-md-4">
+                  <input id="password" name="password" type="password" placeholder=""  class="form-control input-md">
+                    
+                  </div>
+                </div>
+            <!--A quien prefieres-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="radios">A quién prefieres</label>
+                  <div class="col-md-4"> 
+                    <label class="radio-inline" for="radios-0">
+                      <input type="radio" name="radios" id="radios-0" value="1">
+                      Lady Gaga
+                    </label> 
+                    <label class="radio-inline" for="radios-1">
+                      <input type="radio" name="radios" id="radios-1" value="2">
+                      Rihanna
+                    </label>
+                  </div>
+                </div>
+                <!-- Select Multiple -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="municipio">Disco Favorito</label>
+                  <div class="col-md-4">
+                    <select id="municipio" name="municipio" class="form-control">
+                      <option value="1">Artpop</option>
+                      <option value="2">Born this way</option>
+                      <option value="3">Check to Check</option>
+                      <option value="4">Joanne</option>
+                      <option value="5">The Fame</option>
+                      <option value="6">The Fame Monster</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Multiple Radios (inline) -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="radios">Sexo</label>
+                  <div class="col-md-4"> 
+                    <label class="radio-inline" for="radios-0">
+                      <input type="radio" name="radios" id="radios-0" value="1">
+                      Masculino
+                    </label> 
+                    <label class="radio-inline" for="radios-1">
+                      <input type="radio" name="radios" id="radios-1" value="2">
+                      Femenino
+                    </label>
+                  </div>
+                </div>
+
+
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="textarea">Comentarios</label>
+                  <div class="col-md-4">                     
+                    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                  </div>
+                </div>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="button1id"></label>
+                  <div class="col-md-8">
+                    <button id="button1id" name="button1id" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+
+                </form>
+
+        </div> 
+            
         </div>
       </div>
 </section>
-
-
-
 
     <!-- Bootstrap core y JavaScript-->
 
@@ -231,6 +487,7 @@
     <!--importado de la pagina de jquery easy 1.3.2-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3.2/jquery.easing.min.js"></script>
     <script src="js/main.js"></script>   
-
+    <!--<script src="js/wow.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </body>
 </html>
