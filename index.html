@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <!--NOTA: en el videotutorial que estoy viendo (al final pondre el link) nos enseña como tomar como base una plantilla de la pagina oficial de bootstrap, asi como nos enseño Tania la página de Initializr-->
     <!--algunos archivos como fuentes, me parecen inservibles, conforme vaya avanzando en el tutorial, eliminare algunos-->
-
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- controla el nivel de zoom cuando la página se carga por primera vez.-->
 
-    
-
-    <title>VerOna | con Tutorial</title>
-
-    <!--YA NO se usara estas lineas
-    //primera parte
-    //link hacia BOOTSTRAP 
-    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <title>proyectofinal | con Tutorial</title>
 
     <!--Importando el link de css a nuestro archivo -->
     <link href="css/main.css" rel="stylesheet"> <!--generado desde less-->
+
+    <!--Font desde Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--ICONO EN LA PESTAÑA-->
+    <link rel="shortcut icon" href="img/bonito2.ico">
+
+    <!--para que el ICONO se ponga-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     
   </head>
@@ -36,25 +36,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">VeronaPrueba</a>
+          <a class="navbar-brand" href="#" style="font-size: 20px" >FanPage Lady Gaga</a>
         </div>
     <!--MENU-->
-        <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse"> <!--se van a usar desde less-->
+        <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collpase"> <!--se van a usar desde less-->
           <ul class="nav navbar-nav">
             <li class="hidden">
-              <a href="#pagina-arriba"></a> <!--se va a posicionar en la parte principal-->
+              <a href="#pagina-arriba"></a> <!--Pagina Principal-->
             </li>
             <li class="pagina-scroll">
-              <a href="#empresa">empresa</a>
+              <a href="#discografia">Discografia</a> <!--en vez de Multimedia-->
             </li>
             <li class="pagina-scroll">
-              <a href="#servicios">servicios</a>
+              <a href="#biografia">Biografia</a> <!--por historia//las # son anclas-->
             </li>
             <li class="pagina-scroll">
-              <a href="#clientes">clientes</a>
+              <a href="#noticias">Noticias</a>
             </li>
             <li class="pagina-scroll">
-              <a href="#contacto">contacto</a>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </div><!--FIN DEL COLLAPSE -->
@@ -64,133 +64,139 @@
 
 <!--SECCION bienvenida-->
 <!--Muestra un texto enmedio del la pagina, mensaje de bienvenida-->
-    <section id="intro">
-        <div class="intro-cuerpo">
-            <div class="container">
-                <div class="row"><!--fila de bootstrap-->
-                    <div class="col-md-8 col-md-offset-2">
-                        <!--offset se recorra dos columnas hacia la derecha-->
-                        <h1 class="texto-bienvenidos">Bienvenidos</h1>
-                        <p class="intro texto"><strong><span class="color-verde">Harry Potter</span></strong>Potterhead</p>
-                    </div>
-                </div>
+    <section class="intro">
+      <div class="intro-cuerpo">
+        <div class="container">
+          <riv class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <!--offsett hace que se recorra dos columnas hacia la izq.-->
+              <h1 class="texto-bienvenidos">Bienvenidos</h1>
+              <p class="intro-texto"><strong><span class="color-gold">Pagina de los little Monster</span></strong> | Un espacio dedicado para la Mother Monster</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-<!--SECCION empresa-->
-<seccion id="empresa" class="container contenido-seccion">
-    <h2 class="text-center">Nuestra empresa</h2>
-    <p class="text-center">Aqui hay informacion de Harry Potter<strong>Hola</strong>Contenido demo</p>
-    <br>
 
+
+<!--SECCION Discografia-->
+<section id="discografia" class="container contenido-seccion">
+    <h2 class="text-center">Sus Discos mas representativos son</h2>
+    <p class="text-center">Discografía de <strong style="font-size: 30px;"> Lady Gaga</strong> || El contenido de este sitio es opinión personal</p>
+    <br>
 <!--Inicio de ROW 1-->
-    <div class="row" align="center">
+    <div class="row">
         <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
         <!--iconos-->
-                <div class="icono">
-                    <i class="fa fa-thumbs-up fa-5x"></i>
-                </div>
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>                
-            </div>            
+            <div class="icono">
+               <i class="fa fa-thumbs-up fa-5x"></i>
+            </div>
+             <div class="contenido-icono">
+               <h3>Born This Way</h3>
+               <p align="justify">Born This Way —en español: Nací de esta manera— es el segundo álbum de estudio de la cantante estadounidense Lady Gaga, lanzado mundialmente el 23 de mayo de 2011 por el sello Interscope Records.​​
+               </p>
+             </div>
+          </div>
         </div>
 
 
         <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
-                <div class="icono">
-                    <i class="fa fa-headphones fa-5x"></i>
-                </div>
-
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>               
-            </div>            
+        <!--iconos-->
+            <div class="icono">
+               <i class="fa fa-thumbs-up fa-5x"></i>
+            </div>
+             <div class="contenido-icono">
+               <h3>The Fame</h3>
+               <p align="justify">The Fame —en español: La fama— es el álbum debut de la cantante estadounidense Lady Gaga, lanzado mundialmente el 19 de agosto de 2008 por el sello Interscope Records.
+               </p>
+             </div>
+          </div>
         </div>
-
 
         <div class="col-md-4">
             <div class="bloque icono-bloque-izquierdo"> 
-                <div class="icono">
-                    <!--icono-->
-                    <i class="fa fa-money fa-5x"></i>
-                </div>
-
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>
-            </div>           
-        </div>
+        <!--iconos-->
+            <div class="icono">
+               <i class="fa fa-thumbs-up fa-5x"></i>
+            </div>
+             <div class="contenido-icono">
+               <h3>Profesional</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               </p>
+             </div>
+          </div>
+        </div> 
     </div> <!--fin de ROW 1-->
 
 <!--Inicio de ROW 2-->
     <div class="row">
         <div class="col-md-4">
-            <div class="bloque icono-bloque-izquierdo"> 
-                <div class="icono">
-                    <!--icono-->
-                    <i class="fa fa-play fa-5x"></i>
-                </div>
-
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>                
-            </div>            
+          <div class="bloque icono-bloque-izquierdo">
+        <!--iconos-->
+             <div class="icono">
+               <i class="fa fa-book fa-5x"></i>
+             </div>
+             <div class="contenido-icono">
+               <h3>Información</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               </p>
+             </div>
+          </div>
         </div>
 
 
         <div class="col-md-4">
-            <div class="bloque icono-bloque-izquierdo"> 
-                <div class="icono">
-                    <!--icono-->
-                    <i class="fa fa-headphones fa-5x"></i>
-                </div>
-
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>               
-            </div>            
-        </div>
-
+          <div class="bloque icono-bloque-izquierdo">
+             <div class="icono">
+               <i class="fa fa-users fa-5x"></i>
+             </div>
+             <div class="contenido-icono">
+               <h3>Gran Comunidad</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               </p>
+             </div>
+          </div>
+        </div> 
 
         <div class="col-md-4">
-            <div class="bloque icono-bloque-izquierdo"> 
-                <div class="icono">
-                    <!--icono-->
-                    <i class="fa fa-check fa-5x"></i>
-                </div>
-
-                <div class="contenido-icono">
-                    <h3>Conciertos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ea.</p>
-                </div>
-            </div>           
-        </div>
+          <div class="bloque icono-bloque-izquierdo">
+        <!--ICONOS-->
+             <div class="icono">
+               <i class="fa fa-heart fa-5x"></i>
+             </div>
+             <div class="contenido-icono">
+               <h3>Satisfacción Garantizada</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               </p>
+             </div>
+          </div>
+        </div> 
     </div> <!--fin de ROW 2-->
-</seccion>
+</section>
 
 
-<!--seccion SERVICIOS-->
-<section id="servicios" class="contenido-seccion text-center">
+<!--seccion BIOGRAFIA-->
+<section id="biografia" class="contenido-seccion text-center">
+      <div class="seccion-servicios">
+        <div class="container">
+          <h2>Biografia</h2>
+          <p class="lead"><strong>SPA Natural</strong>Servicios especializados en todo lo relacionado con salud y belleza</p>
+          <a href="#biografia" class="btn btn-default btn-lg">Contáctenos</a>
+        </div>
+      </div>
+    </section>
 
+
+<section id="clientes" class="contenido-seccion text-center">
     <div class="container">
-        <h2>Peliculas</h2>
-        <img src="img/Philostone.jpg" width="110">
-        <img src="img/chambers.jpg" width="110">
-        <img src="img/prisioner.jpg" width="112">
-        <img src="img/globet.jpg" width="110">
-        <img src="img/order.jpg" width="110">
-        <img src="img/prince.jpg" width="112">
-        <img src="img/deathlyp1.jpg" width="110">
-        <img src="img/deathlyp2.jpg" width="110">
+        <h2>Discos</h2>
+        <img src="img/discoThefame.jpg" width="110">
+        <img src="img/discoThefame.jpg" width="110">
+        <img src="img/discoThefame.jpg" width="110">
+        
     </div>
 </section>
 
@@ -202,11 +208,14 @@
         <div class="col-md-8 col-md-offset-2">
         <h2>Contacto con la responsable de la página</h2>
         <p>Me interesa saber lo que usted piensa, escribeme a travers del formulario de contacto</p>
-        <p>lau.marzet@gmail.com</p>
+        <p>pruebita@gmail.com</p>
          <ul class="list-inline">
-           <li><a href="http://facebook.com/lalis.mar.3" class="btn btn-success btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Twitter</span></a></li>
-            <li><a href="http://facebook.com/veronalaux" class="btn btn-success btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Facebook</span></a></li>
-            <li><a href="https://www.linkedin.com/in/laurazetina/" class="btn btn-success btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a></li>
+            <li><a href="http://facebook.com/" class="btn btn-primary btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Twitter</span></a></li>
+            
+            <li><a href="http://facebook.com/" class="btn btn-primary btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Facebook</span></a></li>
+            
+            <li><a href="https://www.linkedin.com/" class="btn btn-primary btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a></li>
+            
          </ul> 
         </div>
       </div>
@@ -217,11 +226,11 @@
 
     <!-- Bootstrap core y JavaScript-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/js/bootstrap.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3.2/jquery.easing.compatibility.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="js/bootstrap.js"></script>
+    <!--importado de la pagina de jquery easy 1.3.2-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3.2/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>   
 
   </body>
 </html>
